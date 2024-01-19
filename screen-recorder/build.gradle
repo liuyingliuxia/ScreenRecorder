@@ -33,6 +33,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30"
 }
 
 afterEvaluate {
@@ -44,7 +45,7 @@ afterEvaluate {
                 from components.release // 表示发布 release（jitpack 都不会使用到）
                 groupId = 'com.github.liuyingliuxia' //groupId 随便取 , 这个是依赖库的组 id
                 artifactId = 'screen-recorder'  //artifactId 随便取 , 依赖库的名称（jitpack 都不会使用到）
-                version = '1.0.1' // 当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
+                version = '1.0.2' // 当前版本依赖库版本号，这个jitpack不会使用到，只是我们开发者自己查看
             }
         }
     }
